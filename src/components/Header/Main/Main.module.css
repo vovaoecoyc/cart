@@ -1,0 +1,56 @@
+.searchBlock {
+  position: relative;
+  display: flex;
+  margin-left: 100px;
+}
+
+.inputStyle {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  font-size: inherit;
+  outline: none;
+}
+
+.iconStyle {
+  width: 30px;
+  height: 30px;
+  border-bottom: 1px solid #000000;
+  margin-top: 2px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.leftBlock, .rightBlock {
+  display: flex;
+  align-items: center;
+}
+
+.leftBlock {
+  margin-left: 15px;
+}
+
+.rightBlock {
+  margin-right: 15px;
+  justify-content: center;
+}
+
+.profileBlock, .cartBlock {
+  display: flex;
+  align-items: center;
+}
+
+.cartBlock {
+  margin-left: 58px;
+}
+
+.mrText {
+  margin-left: 10px;
+}
+
+span.mrText > p {
+  margin: 0;
+}

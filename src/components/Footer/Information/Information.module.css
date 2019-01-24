@@ -1,0 +1,14 @@
+.informationSection {
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  padding: 35px 0 35px 0;
+  border-top: 2px solid #b2b2b2;
+  border-bottom: 2px solid #b2b2b2;
+}
+
+.informationBlock {
+  display: flex;
+  width: 1200px;
+  color: #ffffff;
+}

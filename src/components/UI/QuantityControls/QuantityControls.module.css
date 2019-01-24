@@ -1,0 +1,21 @@
+.quantityText {
+  font-size: 18px;
+}
+
+span.mrQtyDec:hover, span.mrQtyInc:hover {
+  color: #ff6c00;
+}
+
+span.mrQtyDec, span.mrQtyInc {
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+span.mrQtyDec{
+  margin-right: 18px;
+}
+
+span.mrQtyInc {
+  margin-left: 18px;
+}

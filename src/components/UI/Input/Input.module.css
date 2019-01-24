@@ -1,0 +1,12 @@
+input.inputStyle {
+  width: 277px;
+  height: 45px;
+  border: 1px solid #dadada;
+  font-size: 14px;
+  padding: 0 15px 0 15px;
+  outline: none;
+}
+
+input.inputStyle::placeholder {
+  color: #dadada;
+}

@@ -1,0 +1,36 @@
+.topStyles {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftBlock {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.phoneFontSize {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.rightBlock {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end; 
+  margin-right: 15px;
+}
+
+.rightBlockItem {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.rightBlockText {
+  font-size: 14px;
+  margin-left: 8px;
+}

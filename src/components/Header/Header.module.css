@@ -1,0 +1,33 @@
+.topBlock {
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e4e4e4;
+  height: 40px;
+}
+.mainBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 85px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #e4e4e4;
+}
+
+.subMenu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}

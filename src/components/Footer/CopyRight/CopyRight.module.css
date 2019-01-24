@@ -1,0 +1,9 @@
+.copyRightBlock {
+  display: flex;
+  margin: auto;
+  width: 500px;
+  font-size: 12px;
+  text-align: center;
+  color: #cacaca;
+  padding: 40px 0 40px 0;
+}

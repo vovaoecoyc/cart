@@ -1,0 +1,22 @@
+.leftSection {
+  display: flex;
+}
+
+.leftSection > img {
+  height: 56px;
+  margin-right: 28px;
+}
+
+.phoneBlock {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.phone {
+  font-size: 30px;
+}
+
+.phoneInfo {
+  font-size: 14px;
+}

@@ -1,0 +1,31 @@
+.List {
+  display: flex;
+  width: 100%;
+  margin: 0 15px 0 15px;
+  padding: 0 0 100px 0;
+}
+
+.Item {
+  display: flex;
+  flex-direction: column;
+  width: 277px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.Item > img {
+  margin-bottom: 10px;
+}
+
+.Item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.nameText {
+  line-height: 20px;
+}
+
+.priceText {
+  margin-top: 13px;
+  font-weight: bold;
+}

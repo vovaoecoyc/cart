@@ -1,0 +1,9 @@
+.promoBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitPromoBlock {
+  display: flex;
+  margin-top: 12px;
+}

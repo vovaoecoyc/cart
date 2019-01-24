@@ -1,0 +1,39 @@
+.blockTitles {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  font-size: 18px;
+}
+
+.blockProducts {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+
+.productBlockSize {
+  width: 178px;
+}
+
+.descriptionBlockSize {
+  width: 302px;
+}
+
+.quantityBlockSize {
+  width: 300px;
+  text-align: center;
+}
+
+.priceBlockSize {
+  width: 218px;
+  text-align: center;
+}
+
+.removeBlockSize {
+  width: 116px;
+  text-align: center;
+}
+
+.removeBlockSize > img {
+  cursor: pointer;
+}

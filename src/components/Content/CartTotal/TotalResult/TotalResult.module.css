@@ -1,0 +1,30 @@
+.resultBlock {
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+  font-size: 16px;
+}
+
+.resultItem {
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+.resultPromoColor {
+  color: #ff8a00;
+}
+
+.total {
+  margin-top: 33px;
+}
+
+.orderSuccessBlock {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 33px;
+}
+
+.orderSuccessBlock button {
+  margin: 0;
+}

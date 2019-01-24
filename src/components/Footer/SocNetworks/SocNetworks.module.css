@@ -1,0 +1,11 @@
+.socNetworksBlock {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 15px 0 15px 0;
+  color: #ffffff;
+}
+
+.socNetworksBlock > :nth-child(n) {
+  margin-left: 15px;
+}

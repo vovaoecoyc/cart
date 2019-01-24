@@ -1,0 +1,19 @@
+.productBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.productBlock:not(:first-child) {
+  margin-top: 30px;
+}
+
+.mainText {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subText {
+  font-size: 14px;
+  color: gray;
+}
