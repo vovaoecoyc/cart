@@ -7,3 +7,15 @@
   color: #cacaca;
   padding: 40px 0 40px 0;
 }
+
+@media only screen and (max-width: 599px) {
+  .copyRightBlock {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  .copyRightBlock {
+    width: 250px;
+  }
+}

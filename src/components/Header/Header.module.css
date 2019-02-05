@@ -25,9 +25,37 @@
   background-color: #e4e4e4;
 }
 
-.subMenu {
+.subMenu{
   display: flex;
   align-items: center;
   width: 100%;
   height: 40px;
+  transition: 4s;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mainBlock {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .mainBlock {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .topBlock {
+    display: none;
+  }
+
+  .mainBlock {
+    flex-direction: column-reverse;
+    margin: 25px 0 25px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
 }

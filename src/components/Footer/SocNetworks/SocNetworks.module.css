@@ -9,3 +9,22 @@
 .socNetworksBlock > :nth-child(n) {
   margin-left: 15px;
 }
+
+@media only screen and (max-width: 599px) {
+  .socNetworksBlock {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .socNetworksBlock > span {
+    display: none;
+  }
+
+  .socNetworksBlock > :nth-child(n) {
+    margin-left: 10px;
+  }
+
+  .socNetworksBlock > :nth-child(1) {
+    margin-left: 0;
+  }
+}

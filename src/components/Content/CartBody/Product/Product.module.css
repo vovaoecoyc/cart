@@ -17,3 +17,25 @@
   font-size: 14px;
   color: gray;
 }
+
+@media only screen and (max-width: 1199px) {
+  .productBlock {
+    width: 900px;
+  }
+
+  .productBlock > div:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .MobileHide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .productBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

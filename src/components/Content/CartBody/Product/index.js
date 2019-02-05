@@ -21,9 +21,9 @@ class Product extends React.Component {
         </div>
         <div className={`${sizeBlock.descriptionBlockSize}`}>
           <p className={`${styles.mainText}`}>{name}</p>
-          <p className={`${styles.subText}`}>{`Код: ${code}`}</p>
-          <p className={`${styles.mainText}`}>{`Размер: ${size}`}</p>
-          <p className={`${styles.mainText}`}>{`Цвет: ${color}`}</p>
+          <p className={`${styles.subText} ${styles.MobileHide}`}>{`Код: ${code}`}</p>
+          <p className={`${styles.mainText} ${styles.MobileHide}`}>{`Размер: ${size}`}</p>
+          <p className={`${styles.mainText} ${styles.MobileHide}`}>{`Цвет: ${color}`}</p>
         </div>
         <div className={`${sizeBlock.quantityBlockSize}`}>
           <QuantityControls id={id} quantity={quantity} />

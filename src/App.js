@@ -5,12 +5,21 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
 import AppContext from './Context';
+import Menu from './components/Header/Menu';
 
 class App extends Component {
   state = {
     sale: {
       isApplySale: false,
       summSale: 0,
+    },
+    subMenu: {
+      id: null,
+      showSubMenu: false,
+    },
+    mobileMenuStatus: {
+      showMobileMenu: false,
+      openMobileMenu: false,
     },
     ...this.props.data,
   };
@@ -108,6 +117,60 @@ class App extends Component {
     this.setState(prevState => ({ ...newState }));
   }
 
+  changeStatusSubMenu(id) {
+    const statusSubMenu = {
+      id: id !== this.state.subMenu.id ? id : null,
+      showSubMenu: id !== this.state.subMenu.id ? true : false,
+    };
+    this.setState(() => ({ subMenu: { ...statusSubMenu } }));
+  }
+
+  closeSubMenu() {
+    const statusSubMenu = {
+      id: null,
+      showSubMenu: false,
+    };
+    this.setState(() => ({ subMenu: { ...statusSubMenu } }));
+  }
+
+  getIdActiveMenuItem() {
+    return this.state.subMenu.id;
+  }
+
+  triggerOpenHamburgerMenu() {
+    this.setState(prevState => {
+      let newMobileMenuStatus = {
+        showMobileMenu: prevState.mobileMenuStatus.showMobileMenu,
+        openMobileMenu: !prevState.mobileMenuStatus.openMobileMenu,
+      };
+      return { ...prevState, mobileMenuStatus: newMobileMenuStatus };
+    });
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+      if (window.screen.width <= 599 && !this.state.mobileMenuStatus.showMobileMenu) {
+        this.setState(prevState => {
+          let newMobileMenuStatus = {
+            showMobileMenu: !prevState.mobileMenuStatus.showMobileMenu,
+            openMobileMenu: prevState.mobileMenuStatus.openMobileMenu,
+          };
+          return { ...prevState, mobileMenuStatus: newMobileMenuStatus };
+        });
+      }
+
+      if (window.screen.width > 599 && this.state.mobileMenuStatus.showMobileMenu) {
+        this.setState(prevState => {
+          let newMobileMenuStatus = {
+            showMobileMenu: !prevState.mobileMenuStatus.showMobileMenu,
+            openMobileMenu: prevState.mobileMenuStatus.openMobileMenu,
+          };
+          return { ...prevState, mobileMenuStatus: newMobileMenuStatus };
+        });
+      }
+    });
+  }
+
   render() {
     return (
       <AppContext.Provider
@@ -119,13 +182,26 @@ class App extends Component {
           getOrderSummWithSale: this.getOrderSummWithSale.bind(this),
           applySale: this.applySale.bind(this),
           removeProductFromCart: this.removeProductFromCart.bind(this),
+          changeStatusSubMenu: this.changeStatusSubMenu.bind(this),
+          getIdActiveMenuItem: this.getIdActiveMenuItem.bind(this),
+          triggerOpenHamburgerMenu: this.triggerOpenHamburgerMenu.bind(this),
+          closeSubMenu: this.closeSubMenu.bind(this),
           ...this.state,
         }}
       >
         <div className="Container">
-          <Header />
-          <Content />
-          <Footer />
+          {this.state.mobileMenuStatus.showMobileMenu &&
+          this.state.mobileMenuStatus.openMobileMenu ? (
+            <React.Fragment>
+              <Menu />
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              <Header />
+              <Content />
+              <Footer />
+            </React.Fragment>
+          )}
         </div>
       </AppContext.Provider>
     );

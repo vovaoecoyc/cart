@@ -8,6 +8,10 @@
   font-size: 22px;
 }
 
+.titleBlock.MrByMenu {
+  margin-top: -5px;
+}
+
 .titleBlock > span {
   white-space: nowrap;
   padding: 0 17px 0 17px;
@@ -19,4 +23,16 @@ hr {
   background-color: #d9d9d9;
   border: none;
   margin: 0 15px 0 15px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .titleBlock {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .titleBlock {
+    width: 600px;
+  }
 }

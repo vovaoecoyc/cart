@@ -15,6 +15,7 @@
 .phoneFontSize {
   font-size: 18px;
   font-weight: normal;
+  padding: 0 5px; 
 }
 
 .rightBlock {
@@ -33,4 +34,31 @@
 .rightBlockText {
   font-size: 14px;
   margin-left: 8px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .phoneFontSize {
+    font-size: 14px;
+  }
+  .topStyles {
+    width: 900px;
+  }
+
+  .leftBlock {
+    text-align: center;
+  }
+
+  .rightBlock {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .topStyles {
+    width: auto;
+  }
+
+  .rightBlockText {
+    display: none;
+  }
 }

@@ -22,3 +22,29 @@ hr {
   background-color: #d9d9d9;
   border: none;
 }
+
+@media only screen and (max-width: 1199px) {
+  .additionalBlock {
+    width: 900px
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .additionalBlock {
+    width: 600px
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .additionalBlock {
+    width: 300px
+  }
+
+  hr {
+    display: none;
+  }
+
+  .additionalTitle > span {
+    margin: auto;
+  }
+}

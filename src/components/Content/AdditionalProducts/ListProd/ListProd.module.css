@@ -29,3 +29,56 @@
   margin-top: 13px;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1199px) {
+  .List {
+    flex-wrap: wrap;
+  }
+
+  .Item {
+    margin-left: 20px;
+  }
+
+  .Item:nth-child(3n+4), .Item:first-child {
+    margin-left: 0;
+  }
+
+  .Item:nth-child(n+4) {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .List {
+    justify-content: center;
+    margin: 0 0 0 0;
+  }
+
+  .Item:nth-child(even) {
+    margin-left: 20px;
+  }
+
+  .Item:nth-child(odd) {
+    margin: 0;
+  }
+
+  .Item:nth-child(n+3) {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .List {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .Item:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .Item:not(:first-child) {
+    margin-top: 20px;
+  }
+}

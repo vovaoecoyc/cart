@@ -37,3 +37,40 @@
 .removeBlockSize > img {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1199px) {
+  .blockTitles {
+    width: 900px;
+  }
+
+  .quantityBlockSize {
+    width: 100px;
+  }
+  
+  .priceBlockSize {
+    width: 168px;
+  }
+  
+  .removeBlockSize {
+    width: 66px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .blockTitles {
+    display: none;
+  }
+
+  .blockProducts > div {
+    margin-bottom: 20px;
+  }
+
+  .descriptionBlockSize {
+    text-align: center;
+  }
+
+  .descriptionBlockSize > p {
+    padding: 0;
+    margin: 0;
+  }
+}

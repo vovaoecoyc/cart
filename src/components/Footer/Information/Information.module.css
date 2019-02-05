@@ -12,3 +12,9 @@
   width: 1200px;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 1199px) {
+  .informationSection {
+    display: none;
+  }
+}

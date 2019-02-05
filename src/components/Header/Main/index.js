@@ -13,7 +13,7 @@ const Main = () => {
       {context => (
         <React.Fragment>
           <div className={`${styles.leftBlock}`}>
-            <img className={`${styles.mrImage}`} src={Logo} alt="logo" />
+            <img className={`${styles.Logo}`} src={Logo} alt="logo" />
             <div className={`${styles.searchBlock}`}>
               <input className={`${styles.inputStyle}`} type="text" placeholder="Поиск по сайту" />
               <div

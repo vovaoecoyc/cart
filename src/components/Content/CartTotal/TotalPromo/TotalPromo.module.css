@@ -5,5 +5,23 @@
 
 .submitPromoBlock {
   display: flex;
+  flex-direction: row;
   margin-top: 12px;
+}
+
+@media only screen and (max-width: 599px) {
+  .submitPromoBlock {
+    flex-direction: column;
+  }
+
+  .submitPromoBlock > button {
+    align-self: flex-end;
+    margin: 10px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .submitPromoBlock > input {
+    width: 230px;
+  }
 }

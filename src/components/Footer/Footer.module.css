@@ -1,3 +1,7 @@
 section.footerSection {
   background-color: #2a2a2a;
 }
+
+.Hide {
+  display: none;
+}

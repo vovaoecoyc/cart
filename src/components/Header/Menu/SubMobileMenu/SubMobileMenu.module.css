@@ -1,0 +1,38 @@
+@media only screen and (max-width: 599px) {
+  .ListStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 0 0 0 15px;
+    padding: 0 0 0 15px;
+  }
+
+  .ListStyle > li:not(:first-child) {
+    margin-top: 10px;
+    color: #000000;
+  }
+
+  .ListStyle > li {
+    font-size: 18px;
+    padding: 3px 0 0;
+  }
+
+  .ListStyle > li > a {
+    color: #000000;
+    line-height: 23px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .ListStyle {
+    border-left: 1px solid #ff6c00;
+  }
+
+  .ListStyle > li {
+    font-size: 15px;
+  }
+}

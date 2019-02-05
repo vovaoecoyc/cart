@@ -1,0 +1,19 @@
+
+.HamburgerMenu{
+  display: none;
+}
+
+.HamburgerMenu > div {
+  width: 50px;
+  height: 5px;
+  margin: 5px 0;
+  background-color: gray;
+}
+
+@media only screen and (max-width: 599px) {
+  .HamburgerMenu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+}
